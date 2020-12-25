@@ -1,2 +1,0 @@
-select Concat(name,case occupation when "Doctor" then "(D)" when "Actor" then "(A)" when "Professor" then "(P)" when "Singer" then "(S)"  else "NONE" end) from occupations order by name;
-Select "There are a total of",count(*),Concat(LOWER(occupation),"s.") from occupations group by(occupation) order by count(*),occupation
